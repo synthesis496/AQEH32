@@ -1,5 +1,8 @@
-# AQEH32 Sell Full IP
+# AQEH32 Test 
 
+Sell Full IP
+
+Zenodo.DOI.22844636
 
 Copyright (c) 2026 Chutiphog Bunloed        All Rights Reserved.
 
