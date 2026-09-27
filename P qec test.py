@@ -1,3 +1,5 @@
+#Copyright (c) 2026 [Chutiphong Bunloed]            All Rights Reserved.
+#All Rights Reserved
 import qec_test as T
 
 results = {}
