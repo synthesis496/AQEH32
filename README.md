@@ -11,7 +11,7 @@ No Continuous Active Measurements Required: Errors are passively driven back to 
 I am offering the exclusive, complete ownership transfer (Full IP Sale) for the D16+ / SO(32) Autonomous QEC Architecture. The purchaser will receive 100% rights to file global patents, commercialize, and integrate this technology into their quantum hardware roadmap.
 Traditional Quantum Error Correction relies on active measurement loops that introduce severe processing latency and thermal energy dissipation. The D16+ Architecture shifts the paradigm to a Passive, Autonomous System that clears quantum errors naturally in real-time.
 Scalable Microchip Integration: Built on a modular qudit framework designed for direct integration into standard modern quantum microchip layouts.
-Fully Validated Architecture Logic: Comes with complete Python-based simulation frameworks. (qec_sim, unit tests, and multi-layer pipeline tests)
+Fully Validated Architecture Logic: Comes with complete Python-based simulation frameworks. 
 What is Included in the Sale Package:
 Full Intellectual Property & Patent Assignment Rights (Purchaser files under their own name)
 Production-Ready Blueprint v1.0 Documentation
