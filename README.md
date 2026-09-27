@@ -1,4 +1,4 @@
-# AQEH32 Test 
+# AQEH32 Test DOI10.5281/Zenodo.22995238
 AQEH32: SO(32) D16+ Autonomous QEC Architecture
 FOR SALE: Full IP & Patent Rights for SO(32) Autonomous Quantum Error Correction Architecture (∆Q = 0)
 This repository contains the validated test framework and verification pipelines for the D16+ / SO(32) Autonomous QEC Architecture. The core operational logic and production blueprints are held securely and are available for acquisition.
@@ -19,5 +19,5 @@ Complete Simulation & Validation Codebase (Core Engine, Decoder, and Automated T
 Transaction Type: Outright Sale / Exclusive IP Transfer (NDA required for full code inspection).
 Serious inquiries and acquisition offers: Please reach out via Direct Message (DM) or contact me directly 
 E-mail: synthesis496@gmail.com to receive the Executive Summary and NDA.
-Zenodo.DOI.22844636
+DOI10.5281/Zenodo.22995238
 Copyright (c) 2026 Chutiphog Bunloed       All Rights Reserved
