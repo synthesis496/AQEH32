@@ -1,3 +1,5 @@
+#Copyright (c) 2026 [Chutiphong Bunloed]            All Rights Reserved.
+#All Rights Reserved
 import numpy as np
 import qec_sim as Q
 
