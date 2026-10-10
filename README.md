@@ -3,6 +3,7 @@
 Architect:Chutiphong Bunloed (Buriram, Thailand)
 
 Orcid:0009-0003-4295-7521
+DOI 10.5281/Zenodo.23286311
 
 
 # 🌌 Autonomous Quantum Error & Healing (AQEH32)
