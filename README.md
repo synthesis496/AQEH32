@@ -6,7 +6,7 @@ Orcid:0009-0003-4295-7521
 DOI 10.5281/Zenodo.23286311
 
 
-# 🌌 Autonomous Quantum Error & Healing (AQEH32)
+# 🌌 Passive Autonomous Quantum Error & Healing (AQEH32)
 
 AQEH32 is a fully self-contained, single-file Python framework designed to simulate and evaluate a **measurement-free, passive self-healing architecture** for high-dimensional quantum systems. 
 
