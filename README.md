@@ -23,7 +23,7 @@ Traditional quantum error correction requires stopping the system to measure err
 
 ---
 
-## 🧩 Single-Script Architecture
+##  Single-Script Architecture
 
 Everything you need to run, test, and adapt the simulation is packed into this single file. The code is modularly structured into 5 logical layers:
 
@@ -32,6 +32,25 @@ Everything you need to run, test, and adapt the simulation is packed into this s
 3. **Layer 3: Timing** — Generates the Fibonacci clock to handle discrete passive activation windows.
 4. **Layer 4: Active Decoder** — Executes an 8-step safety sequence utilizing conservation filters, weight checking, and symmetry routing.
 5. **Layer 5: Passive Healing** — Runs the open quantum system time-evolution pipeline using custom-built decay dynamics.
+
+
+##  Quick Start & Customization
+
+### Prerequisites
+The script runs on standard Python 3 and requires only two common mathematical libraries:
+```bash
+pip install numpy scipy
+```
+
+### Execution
+Since the framework is fully integrated, you can execute the simulator immediately by running the script directly:
+```bash
+python aqeh.py
+```
+
+### Benchmarking
+To test different layouts or adjust noise profiles, simply change the variables isolated in the `CONFIGURATION` block at the top of the `aqeh.py` file.
+
 
 Copyright (c) 2026 [Chutiphong Bunloed]            
 All Rights Reserved.
