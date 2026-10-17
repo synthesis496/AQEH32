@@ -1,5 +1,5 @@
 #Copyright(c)2026.Chutiphong Bunloed
-#All Right Reservse
+#All Right Reservsed
 
 import numpy as np
 from itertools import product
