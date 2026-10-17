@@ -74,4 +74,6 @@ restored_state = apply_correction(latest_state, detected_error)
 * Optimizing the active decoder script to support a higher number of network sites.
 * Writing data visualization tools to graph the system's survival rate over time.
 
+E-mail : synthesis496@gmail.com
+
 Copyright (c) 2026 Chutiphong Bunloed   All Rights Reserved.
