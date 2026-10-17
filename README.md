@@ -1,56 +1,77 @@
 
-
 Architect:Chutiphong Bunloed (Buriram, Thailand)
 
 Orcid:0009-0003-4295-7521
 DOI 10.5281/Zenodo.23286311
 
+# AQEH32: Hybrid Quantum Error Correction & Passive Healing Simulator
 
-#  Passive Autonomous Quantum Error & Healing (AQEH32)
-
-AQEH32 is a fully self-contained, single-file Python framework designed to simulate and evaluate a **measurement-free, passive self-healing architecture** for high-dimensional quantum systems. 
-
-Traditional quantum error correction requires stopping the system to measure errors, which wastes time and introduces extra noise. AQEH32 solves this bottleneck by using an automated decay network. It naturally guides faulty quantum states back into a stable, protected zone without active monitoring or complex hardware overhead.
+**AQEH32** is a Python framework designed to simulate a **Hybrid Quantum Error Correction (QEC)** architecture for **5-level quantum systems (qudits)** on a multi-site network. The platform bridges the gap between digital software-driven error detection and physical hardware-driven automated healing.
 
 ---
 
-##  Key Benefits & Practical Value
+## 🚀 Key Benefits & Value Propositions
 
-* **Zero Measurement Overhead:** Works entirely in the background through engineered passive pathways. It stabilizes the system without triggering active state checks that often cause quantum states to collapse.
-* **Guaranteed Fault Recovery:** Designed with a loop-free decay network. As long as the healing pump strength outpaces the environmental noise rate, the system naturally resets itself and stays stable.
-* **Fibonacci Synchronization Clock:** Uses discrete Fibonacci timing intervals to trigger optimal healing windows, drastically saving control energy compared to continuous-pulse methods.
-* **High-Dimensional Capacity:** Built natively for 5-dimensional qudits instead of standard 2-level qubits, allowing for much larger data storage and computing capacity.
+* **Minimized Performance Overhead:** By allowing continuous passive healing to catch minor errors automatically, the system reduces the need to run heavy digital decoding software constantly. This minimizes the risk of introducing additional noise during active inspection.
+* **Leakage and Phase Protection:** The dual-filter decoding system is explicitly optimized for high-dimensional 5-level systems, providing strong defense lines against state leakages and multi-level phase errors.
+* **Resonance Avoidance via Smart Timing:** Instead of checking for errors at constant, predictable intervals, the simulator uses a non-periodic Fibonacci clock sequence. This prevents the system from locking gears with outside periodic noise, preventing data corruption.
 
 ---
 
-##  Single-Script Architecture
+## 🛠️ How it Works & Architecture
 
-Everything you need to run, test, and adapt the simulation is packed into this single file. The code is modularly structured into 5 logical layers:
+The simulator coordinates the protection task across different logical layers:
+* **The Foundation & Encoding Layers:** Setup the physical rules, coordinate mappings, and structural symmetry of the 5-level network to keep the logical workspace secure.
+* **The Timing Layer:** Operates as a smart clock that determines the exact, non-linear moments when the system should actively step in to check for faults.
+* **The Active Decoder Layer:** Executes a step-by-step algorithm to intercept, evaluate, and filter out fake error signals, choosing the most likely physical error to correct.
+* **The Passive Healing Layer:** Simulates a natural environmental dampening effect that automatically pushes stray particles and corrupted states back into their proper original slots without software intervention.
 
-1. **Layer 1: Foundation** — Sets up high-dimensional charge operators across custom lattice configurations.
-2. **Layer 2: Encoding** — Builds the unique permutation-based mirror network across physical sites.
-3. **Layer 3: Timing** — Generates the Fibonacci clock to handle discrete passive activation windows.
-4. **Layer 4: Active Decoder** — Executes an 8-step safety sequence utilizing conservation filters, weight checking, and symmetry routing.
-5. **Layer 5: Passive Healing** — Runs the open quantum system time-evolution pipeline using custom-built decay dynamics.
+---
 
-
-##  Quick Start & Customization
+## 💻 Usage & Quick Start
 
 ### Prerequisites
-The script runs on standard Python 3 and requires only two common mathematical libraries:
-```bash
-pip install numpy scipy
+* Python 3.8+
+* NumPy
+* SciPy
+
+### Basic Simulation Workflow
+You can run a complete hybrid simulation loop by setting up the passive decay time frame, letting the system run, and calling the decoder to fix unresolved errors:
+
+```python
+import numpy as np
+
+# 1. Setup the system dimensions and the simulation timeline
+dim = total_dim()
+times = np.linspace(0, 10, 100)
+
+# 2. Initialize your initial system state and the automated passive healing layer
+rho_init = np.zeros((dim, dim), dtype=complex)
+rho_init[0, 0] = 1.0  # Start from a clean baseline state
+L_heal = build_L_heal()
+
+# 3. Step A: Let the system evolve through continuous passive healing
+simulated_states = evolve(rho_init, L_heal, times)
+
+# 4. Step B: Trigger the Active Decoder to identify residual errors
+decoder = Decoder()
+all_candidates = decoder.step3_generate_candidates(max_weight=2)
+
+# Provide a sample error syndrome reading captured by the system
+syndrome_sample = (1, 4) 
+detected_error = decoder.decode(syndrome_sample, all_candidates)
+
+# 5. Step C: Apply the structural correction to restore the system
+latest_state = simulated_states[-1]
+restored_state = apply_correction(latest_state, detected_error)
 ```
 
-### Execution
-Since the framework is fully integrated, you can execute the simulator immediately by running the script directly:
-```bash
-python aqeh.py
-```
+---
 
-### Benchmarking
-To test different layouts or adjust noise profiles, simply change the variables isolated in the `CONFIGURATION` block at the top of the `aqeh.py` file.
+## 🤝 Contributing
 
+* Testing the code against different types of random noise environments.
+* Optimizing the active decoder script to support a higher number of network sites.
+* Writing data visualization tools to graph the system's survival rate over time.
 
-Copyright (c) 2026 [Chutiphong Bunloed]            
-All Rights Reserved.
+Copyright (c) 2026 Chutiphong Bunloed   All Rights Reserved.
